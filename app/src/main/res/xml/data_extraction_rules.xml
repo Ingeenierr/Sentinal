@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <cloud-backup>
+        <!-- Exclude sensitive behavioral data from cloud backup -->
+        <exclude domain="sharedpref" path="behavioral_data.xml"/>
+        <exclude domain="database" path="behavioral_database.db"/>
+    </cloud-backup>
+    <device-transfer>
+        <!-- Exclude sensitive behavioral data from device transfer -->
+        <exclude domain="sharedpref" path="behavioral_data.xml"/>
+        <exclude domain="database" path="behavioral_database.db"/>
+    </device-transfer>
+</data-extraction-rules>
